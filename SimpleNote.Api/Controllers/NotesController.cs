@@ -66,5 +66,16 @@ namespace SimpleNote.Api.Controllers
             }
             return BadRequest(ModelState);
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteNote(int id)
+        {
+            Note note = await _context.Notes.FindAsync(id);
+            if (note == null)
+                return NotFound();
+            _context.Remove(note);
+            await _context.SaveChangesAsync();
+            return NoContent();
+
+        }
     }
 }
