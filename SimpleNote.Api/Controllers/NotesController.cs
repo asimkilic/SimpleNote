@@ -54,6 +54,14 @@ namespace SimpleNote.Api.Controllers
 
             if (ModelState.IsValid)
             {
+                Note note = await _context.Notes.FindAsync(id);
+                if (note is null) return NotFound();
+
+                note.Title = putNoteDto.Title;
+                note.Content = putNoteDto.Content;
+                note.Time = DateTime.Now;
+                await _context.SaveChangesAsync();
+                return note;
 
             }
             return BadRequest(ModelState);
