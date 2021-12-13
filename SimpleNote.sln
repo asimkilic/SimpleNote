@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleNote.Api", "SimpleNote.Api\SimpleNote.Api.csproj", "{BDA0176E-9EA7-4D83-A97C-C50D3224B400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDA0176E-9EA7-4D83-A97C-C50D3224B400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA0176E-9EA7-4D83-A97C-C50D3224B400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA0176E-9EA7-4D83-A97C-C50D3224B400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA0176E-9EA7-4D83-A97C-C50D3224B400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5398F4D-589F-4464-BFFE-E110E89DC4D0}
+	EndGlobalSection
+EndGlobal
